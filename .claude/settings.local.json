@@ -4,7 +4,9 @@
       "Bash(gh repo *)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:portfolio-orbissystems.vercel.app)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "PowerShell(gh api *)",
+      "PowerShell($forks = Invoke-RestMethod -Uri \"https://api.github.com/repos/surajmeruva0786/orbissystems/forks\" -Headers @{ \"User-Agent\" = \"PowerShell\" }; if \\($forks.Count -eq 0\\) { \"No forks found.\" } else { $forks | Select-Object -ExpandProperty full_name })"
     ]
   }
 }
